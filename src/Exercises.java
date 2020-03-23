@@ -53,6 +53,16 @@ public class Exercises {
 		   int end = list.length;
 		   while (start < end) {
 			     int mid = (start + end) / 2;
+	     if (list[mid].compareTo(target) < 0) {
+	         start = mid + 1;
+	       } else if (list[mid].compareTo(target) > 0) {
+	         end = mid - 1;
+	       } else if (list[mid].compareTo(target) == 0) {
+	         return mid;
+	       }
+
+	   }
+	return -1;     
   }
 
   public int[] bubble(int[] list, boolean ascending) {
