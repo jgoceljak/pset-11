@@ -51,6 +51,8 @@ public class Exercises {
 		   }
 		   int start = 0;
 		   int end = list.length;
+		   while (start < end) {
+			     int mid = (start + end) / 2;
   }
 
   public int[] bubble(int[] list, boolean ascending) {
