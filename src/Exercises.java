@@ -26,7 +26,9 @@ public class Exercises {
   }
 
   public int findMeFaster(ArrayList<Integer> list, int target) {
-
+	  if (list == null) {
+		     return -1;
+		   }
 	  int start = 0;
 	  int mid = 0;
 	  int end = list.size() - 1;
