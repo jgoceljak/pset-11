@@ -146,7 +146,9 @@ public class Exercises {
   }
 
   public int[] selection(int[] list, boolean ascending) {
-    return null;
+	  if (list == null || list.length == 0) {
+          return null;
+      }
   }
 
   public ArrayList<String> selection(ArrayList<String> list, boolean ascending) {
