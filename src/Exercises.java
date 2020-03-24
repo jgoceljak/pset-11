@@ -243,6 +243,8 @@ public class Exercises {
   }
 
   public String[] merge(String[] list, boolean ascending) {
-    return null;
+	  if (list == null || list.length == 0) {
+          return null;
+      }
   }
 }
