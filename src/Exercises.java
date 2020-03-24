@@ -169,6 +169,17 @@ public class Exercises {
 	  if (list == null || list.size() == 0) {
           return null;
       }
+	  for (int i = 0; i < list.size(); i++) {
+          String small= list.get(i);
+          int smallestIndex = i;
+          for (int j = i; j < list.size(); j++) {
+              String value = list.get(j);
+              if (value.compareTo(small) < 0) {
+            	  small = value;
+                  smallestIndex = j;
+              }
+          }
+	  }
   }
 
   public ArrayList<Integer> merge(ArrayList<Integer> list, boolean ascending) {
