@@ -190,7 +190,13 @@ public class Exercises {
  
 
   public ArrayList<Integer> merge(ArrayList<Integer> list, boolean ascending) {
-    return null;
+	  if (list == null || list.size() == 0) {
+          return null;
+      }
+
+      ArrayList < Integer > left = new ArrayList < Integer > ();
+      ArrayList < Integer > right = new ArrayList < Integer > ();
+      int center;
   }
 
   public String[] merge(String[] list, boolean ascending) {
