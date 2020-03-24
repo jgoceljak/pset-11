@@ -193,7 +193,6 @@ public class Exercises {
 	  if (list == null || list.size() == 0) {
           return null;
       }
-
       ArrayList < Integer > left = new ArrayList < Integer > ();
       ArrayList < Integer > right = new ArrayList < Integer > ();
       int center;
@@ -246,5 +245,29 @@ public class Exercises {
 	  if (list == null || list.length == 0) {
           return null;
       }
+	  if (list.length >= 2) {
+	         String[] left = new String[list.length/2];
+	         String[] right = new String[list.length - list.length/2];
+	         for (int i = 0; i < left.length; i++) {
+	             left[i] = list[i];
+	         }
+	         for (int i = 0; i < right.length; i++) {
+	             right[i] = list[i + list.length / 2];
+	         }
+	         merge(left, true);
+	         merge(right, true);
+	         int a = 0;
+	         int b = 0;
+	         for (int i = 0; i < list.length; i++) {
+	             if (b >= right.length || (a < left.length && left[a].compareToIgnoreCase(right[b]) < 0)) {
+	                 list[i] = left[a];
+	                 a++;
+	             } else {
+	                 list[i] = right[b];
+	                 b++;
+	             }
+	         }
+	     }
+	     return list;
+	  }
   }
-}
