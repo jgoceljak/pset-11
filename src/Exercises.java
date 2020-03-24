@@ -166,7 +166,9 @@ public class Exercises {
   }
 
   public ArrayList<String> selection(ArrayList<String> list, boolean ascending) {
-    return null;
+	  if (list == null || list.size() == 0) {
+          return null;
+      }
   }
 
   public ArrayList<Integer> merge(ArrayList<Integer> list, boolean ascending) {
