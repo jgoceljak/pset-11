@@ -125,7 +125,9 @@ public class Exercises {
   }
 
   public String[] insertion(String[] list, boolean ascending) {
-    return null;
+	  if (list == null || list.length == 0) {
+          return null;
+      }
   }
 
   public int[] selection(int[] list, boolean ascending) {
